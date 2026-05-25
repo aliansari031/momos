@@ -1,0 +1,226 @@
+{
+  "admin": {
+    "username": "admin@momoskingdom.com",
+    "passwordHash": "$2b$10$W71MovvuZCuRPIHZXBtxbOxSK8HwfksEv36.qLFkd1xtTmM.MDxZe"
+  },
+  "settings": {
+    "address": "Royal Food Street, Block 4, Clifton, Karachi, Pakistan",
+    "phone": "+92 318 9212223",
+    "bookingPhone": "+92 318 9212223",
+    "whatsapp": "923189212223",
+    "businessHours": "Monday - Sunday: 12:00 PM - 2:00 AM",
+    "facebook": "https://facebook.com/momoskingdom",
+    "instagram": "https://instagram.com/momoskingdom",
+    "twitter": "https://twitter.com/momoskingdom",
+    "logoUrl": "",
+    "bannerText": "✨ THE KINGDOM HAS EXPANDED! CHICKEN GOLD STEAM MOMOS NOW AVAILABLE ✨",
+    "heroTitle": "Savor the Steamed Royalty of Elite Taste",
+    "heroSubtitle": "Welcome to Momos Kingdom. Crafting Karachi's ultimate luxury street food dumplings with gold-foil spray, crispy coatings, and molten cheese stuffing."
+  },
+  "seo": {
+    "title": "Momos Kingdom | Premium Luxury Dumplings in Karachi",
+    "description": "Discover Karachi's finest luxury food street momos. Momos Kingdom serves premium steam, deep-fried crispy, molten cheese, and fiery wok-tossed Schezwan dumplings.",
+    "keywords": "Momos in Karachi, Best momos, Momos Kingdom, Fast food in Karachi, Steam momos, Fried momos, Gold momos Karachi, Cheese momos, Clifton momos",
+    "canonicalUrl": "https://momoskingdom.com",
+    "ogTitle": "Momos Kingdom | The Royal Taste of Dumplings",
+    "ogDescription": "Bite into juicy perfection. Our artisanal dumplings are prepared with premium local spices and served with a majestic golden highlights twist.",
+    "ogImage": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&q=80&w=800"
+  },
+  "categories": [
+    {
+      "id": "steam",
+      "name": "Imperial Steamed"
+    },
+    {
+      "id": "fried",
+      "name": "Royal Crispy Fried"
+    },
+    {
+      "id": "spicy",
+      "name": "Sizzling Chili Wok"
+    },
+    {
+      "id": "cheese",
+      "name": "Majestic Melted Cheese"
+    }
+  ],
+  "products": [
+    {
+      "id": "p1",
+      "name": "Golden Emperor Steam Momos",
+      "category": "steam",
+      "price": 490,
+      "description": "Artisanal minced seasoned chicken dumplings, wrapped meticulously and steamed to juicy imperial perfection. Sprayed with finest edible gold luster dust.",
+      "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&q=80&w=650",
+      "tags": [
+        "Signature 👑",
+        "Steamed",
+        "Best Seller"
+      ],
+      "available": true,
+      "featured": true
+    },
+    {
+      "id": "p2",
+      "name": "Majestic Jade Veg Dumplings",
+      "category": "steam",
+      "price": 450,
+      "description": "Creamy hand-pressed organic cottage cheese (paneer) folded with fresh baby spinach, spring scallions, and delicate royal herbs, cooked in bamboo steamers.",
+      "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&q=80&w=650",
+      "tags": [
+        "Vegetarian 🌱",
+        "Steamed"
+      ],
+      "available": true,
+      "featured": false
+    },
+    {
+      "id": "p3",
+      "name": "Kingdom's Crispy Gold Fry",
+      "category": "fried",
+      "price": 520,
+      "description": "Fierce, crunchy deep-fried chicken momos double-coated with custom premium multi-grain breading, served with custom spiced chili garlic oil sauce.",
+      "image": "https://images.unsplash.com/photo-1625220194771-7ebded05fbe1?auto=format&fit=crop&q=80&w=650",
+      "tags": [
+        "Ultra Crispy ⚡",
+        "Fried"
+      ],
+      "available": true,
+      "featured": true
+    },
+    {
+      "id": "p4",
+      "name": "Sizzling Schezwan Chili Toss",
+      "category": "spicy",
+      "price": 580,
+      "description": "Pan-seared momos aggressively tossed in custom blistering cast iron skillet with toasted ginger, red jalapeno capsicums, coriander, and house special Schezwan chili paste.",
+      "image": "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&q=80&w=650",
+      "tags": [
+        "Fiery Spicy 🔥",
+        "Wok Tossed"
+      ],
+      "available": true,
+      "featured": true
+    },
+    {
+      "id": "p5",
+      "name": "Molten Crown Triple Cheese Momos",
+      "category": "cheese",
+      "price": 650,
+      "description": "Baked to bubbly heaven. Ground chicken momos loaded inside with molten cheddar, mozzarella, and dynamic cream cheese blend, with Italian oregano sprinkling.",
+      "image": "https://images.unsplash.com/photo-1625220194771-7ebded05fbe1?auto=format&fit=crop&q=80&w=650",
+      "tags": [
+        "Extra Cheesy 🧀",
+        "Decadent"
+      ],
+      "available": true,
+      "featured": true
+    },
+    {
+      "id": "p6",
+      "name": "Honey Garlic Glaze Crispy",
+      "category": "spicy",
+      "price": 560,
+      "description": "Crispy fried momos tossed in a sticky, sweet & savory hand-prepared dark soy, honey, and toasted brown garlic glaze.",
+      "image": "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&q=80&w=650",
+      "tags": [
+        "Sweet & Savory",
+        "Crispy"
+      ],
+      "available": true,
+      "featured": false
+    },
+    {
+      "id": "p_1779712991484",
+      "name": "momos x",
+      "category": "steam",
+      "price": 350,
+      "description": "no more sell",
+      "image": "https://thumbs.dreamstime.com/b/traditional-dumpling-momos-food-nepal-served-tomato-chutney-over-moody-background-selective-focus-384906402.jpg",
+      "tags": [
+        "Fresh",
+        "Steamed"
+      ],
+      "available": true,
+      "featured": true
+    }
+  ],
+  "advertisements": [
+    {
+      "id": "ad-1",
+      "title": "👑 Limited Royal Feast Offer 👑",
+      "image": "https://images.unsplash.com/photo-1625220194771-7ebded05fbe1?auto=format&fit=crop&q=80&w=800",
+      "videoUrl": "",
+      "redirectUrl": "#offers",
+      "popupTiming": 2000,
+      "active": true,
+      "priority": 1,
+      "scheduleStart": "2026-01-01",
+      "scheduleEnd": "2027-12-31"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "r1",
+      "name": "Zainab Ahmed",
+      "rating": 5,
+      "comment": "Absolutely the finest momos in Karachi. The Golden Emperor feels like dining inside a high-end palace. Juicy, rich and exceptionally high-end packaging!",
+      "date": "2026-05-20",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150"
+    },
+    {
+      "id": "r2",
+      "name": "Mustafa Kamal",
+      "rating": 5,
+      "comment": "The Sizzling Schezwan pan-fried momos are genuinely hot and flavorsome. Excellent service and clean presentation.",
+      "date": "2026-05-18",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150"
+    },
+    {
+      "id": "r3",
+      "name": "Sarah S. Khan",
+      "rating": 5,
+      "comment": "Unmatched luxury branding! The molten cheese momos were completely outstanding. Tastes exactly like a premium international chain.",
+      "date": "2026-05-22",
+      "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150"
+    }
+  ],
+  "gallery": [
+    {
+      "id": "g1",
+      "title": "Royal Bamboo Steamer Handcraft",
+      "url": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+      "id": "g2",
+      "title": "Ultimate Golden Crunch Coating",
+      "url": "https://images.unsplash.com/photo-1625220194771-7ebded05fbe1?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+      "id": "g3",
+      "title": "Blazing Hot Chili Pan Sear",
+      "url": "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&q=80&w=600"
+    },
+    {
+      "id": "g4",
+      "title": "Premium Garlic Chili Oil Drizzles",
+      "url": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&q=80&w=600"
+    }
+  ],
+  "offers": [
+    {
+      "id": "of1",
+      "title": "Kingdom Welcome Special",
+      "description": "Get a royalty 20% discount on orders of PKR 1,200 or more.",
+      "code": "ROYAL20",
+      "discount": "20% OFF"
+    },
+    {
+      "id": "of2",
+      "title": "Steamed Feast Trio",
+      "description": "Buy any 2 Steam momos and get 1 Golden Emperor FREE!",
+      "code": "EMPERORBOGO",
+      "discount": "BUY 2 GET 1"
+    }
+  ]
+}

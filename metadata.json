@@ -1,0 +1,6 @@
+{
+  "name": "Momos Kingdom",
+  "description": "Premium dark luxury food brand website with real-time CMS, interactive popup ads manager, product menu, and secure admin panel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
