@@ -9,6 +9,8 @@ import ContactSection from "./components/ContactSection";
 import AdminSection from "./components/AdminSection";
 import ToastContainer, { ToastMessage, ToastType } from "./components/Toast";
 import { CMSData, Advertisement } from "./types";
+import localBackupData from "../db.json";
+
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<string>("home");
@@ -34,21 +36,47 @@ export default function App() {
   };
 
   // Fetch Public CMS Content
-  const fetchCmsData = async () => {
+  // const fetchCmsData = async () => {
+  //   try {
+  //     const res = await fetch("/api/public/data");
+  //     if (res.ok) {
+  //       const data: CMSData = await res.json();
+  //       setCmsData(data);
+  //     } else {
+  //       addToast("Error loading server-side CMS catalog. Reconnecting...", "error");
+  //     }
+  //   } catch {
+  //     addToast("Network connection idle. Running dynamic local seed backup.", "warning");
+  //   } finally {
+  //     setIsLoading(false);
+  //   }
+  // };
+
+  // Aap top par db.json ko direct import kar sakte hain
+  
+const fetchCmsData = async () => {
     try {
-      const res = await fetch("/api/public/data");
-      if (res.ok) {
-        const data: CMSData = await res.json();
-        setCmsData(data);
-      } else {
-        addToast("Error loading server-side CMS catalog. Reconnecting...", "error");
+      // Direct local file ka data state me set kar do bina kisi API call ke
+      setCmsData(localBackupData as any);
+      
+      // Agar local environment (localhost) hai to console me show ho jaye
+      if (window.location.hostname === "localhost") {
+        console.log("Running local development mock server data");
       }
-    } catch {
-      addToast("Network connection idle. Running dynamic local seed backup.", "warning");
+    } catch (err) {
+      console.error("Data load failed", err);
+      setCmsData(localBackupData as any);
     } finally {
       setIsLoading(false);
     }
   };
+
+
+
+
+
+
+  
 
   useEffect(() => {
     fetchCmsData();
