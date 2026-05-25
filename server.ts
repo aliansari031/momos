@@ -488,3 +488,43 @@ async function bootstrapServer() {
 bootstrapServer().catch((err) => {
   console.error("Critical server bootstrap crashed: ", err);
 });
+
+
+
+
+
+
+// --- SERVER INITIATION BOOTSTRAP OVERRIDE ---
+async function bootstrapServer() {
+  // 1. Initialize database safely
+  await initDatabase();
+
+  // 2. Setup Vite dev middleware or static prod routes
+  if (process.env.NODE_ENV !== "production") {
+    const vite = await createViteServer({
+      server: { middlewareMode: true },
+      appType: "spa",
+    });
+    app.use(vite.middlewares);
+  } else {
+    const distPath = path.join(process.cwd(), "dist");
+    app.use(express.static(distPath));
+    app.get("*", (req, res) => {
+      res.sendFile(path.join(distPath, "index.html"));
+    });
+  }
+
+  // 3. Vercel ke liye ye condition zaroori hai
+  if (process.env.NODE_ENV !== "production") {
+    app.listen(PORT, "0.0.0.0", () => {
+      console.log(`✨ Express server running on port ${PORT}`);
+    });
+  }
+}
+
+bootstrapServer().catch((err) => {
+  console.error("Critical server bootstrap crashed: ", err);
+});
+
+// Vercel ko app export chahiye hoti hai serverless ke liye
+export default app;
